@@ -208,7 +208,7 @@ getCached().then(cached => {
     }, 1)
 
     queue.drain = () => {
-      if (process.env.DISCORD_WEBHOOK && newAddons.length)
+      if (config.DISCORD_WEBHOOK && newAddons.length)
         sendDiscordMessage(newAddons)
       console.log('copying resources (styles, js, images)')
       fs.readdirSync('./resources').forEach(file => {
