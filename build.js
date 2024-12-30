@@ -231,7 +231,7 @@ getCached().then(cached => {
         addonCatalogs: [{
           type: 'all',
           id: 'community',
-          name: 'Community',
+          name: 'Community (External)',
         }],
       };
 
