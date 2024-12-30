@@ -225,7 +225,9 @@ getCached().then(cached => {
         version: '1.0.0',
         name: 'Stremio Community Addons List',
         description: 'Stremio Community Addons List',
+        types: ["movie", "series", "channel", "tv"],
         resources: ['addon_catalog'],
+        catalogs: [],
         addonCatalogs: [{
           type: 'all',
           id: 'community',
