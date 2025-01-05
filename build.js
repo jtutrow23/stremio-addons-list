@@ -111,7 +111,8 @@ getCached().then(cached => {
         })
         if (cached.catalog.length && !cached.catalog.find(el => ((el || {}).manifest || {}).id === addonManifest.id)) {
           task.manifest = addonManifest
-          newAddons.push(task)
+          if (!config.blockedManifests.includes(task.url))
+            newAddons.push(task)
         }
         
         task.labels.pop('approved') // we shouldn't show the "approved" label on the addon page
