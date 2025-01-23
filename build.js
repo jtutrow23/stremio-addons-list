@@ -210,7 +210,7 @@ getCached().then(cached => {
 
     queue.drain = () => {
       if (config.DISCORD_WEBHOOK && newAddons.length)
-        sendDiscordMessage(newAddons.filter(addon => !config.blockedAnnouncers.includes(addon.url)))
+        sendDiscordMessage(newAddons.filter(addon => !config.blockedManifests.includes(addon.url)))
       console.log('copying resources (styles, js, images)')
       fs.readdirSync('./resources').forEach(file => {
         const filePath = `./resources/${file}`
