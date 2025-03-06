@@ -6,7 +6,7 @@ module.exports = {
 	"GITHUB_TOKEN": process.env.TOKEN,
 	// for repo: danamag/stremio-addons-list
 	"repository": process.env.REPO || "stremio-addons-list",
-	"author": process.env.REPO_AUTHOR || "danamag",
+	"author": process.env.REPO_AUTHOR || "jtutrow23",
 	"netlify-domain": process.env.DOMAIN || "stremio-addons.com",
 	"page-title": "Stremio Community Addons List",
 	// images are located in ./resources/
